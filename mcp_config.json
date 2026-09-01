@@ -8,11 +8,6 @@
       },
       "description": "Context7 MCP Server: Real-time official documentation and version-specific code patterns for Node.js, Express, MongoDB, Mongoose, and Chart.js."
     },
-    "ponytail": {
-      "command": "npx",
-      "args": ["-y", "ponytail-mcp@latest"],
-      "description": "Ponytail MCP Server: Enforces YAGNI, minimalist native web code, vanilla JavaScript patterns, and prevents forbidden external frontend frameworks."
-    },
     "mongodb": {
       "command": "npx",
       "args": ["-y", "mongodb-mcp-server@latest"],
@@ -22,16 +17,13 @@
       "description": "MongoDB MCP Server: Schema inspection, aggregation pipeline testing, database queries, and indexing validation for The Daily Web models."
     },
     "fetch": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-fetch@latest"],
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
       "description": "Fetch MCP Server: Testing RESTful API endpoints, verifying OpenWeatherMap API responses, and checking header rate-limits."
     },
     "github": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-github@latest"],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": ""
-      },
       "description": "GitHub MCP Server: Team Git workflow management, PR review tracking, branch creation, and student contribution logs."
     }
   }

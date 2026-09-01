@@ -31,26 +31,25 @@ All skills and MCP servers included in this plugin are official, widely adopted,
 | # | MCP Server | Source / Package | Purpose in This Project |
 | :- | :--- | :--- | :--- |
 | 1 | **`context7`** | [`upstash/context7`](https://github.com/upstash/context7) (`@upstash/context7-mcp`) | Real-time, version-specific official documentation & API patterns for Node.js, Express, Mongoose, and Chart.js without hallucinations. |
-| 2 | **`ponytail`** | [`DietrichGebert/ponytail`](https://github.com/DietrichGebert/ponytail) (`ponytail-mcp`) | Enforces "YAGNI", clean standard library patterns, pure Vanilla JavaScript DOM operations, and strictly blocks forbidden UI frameworks (React, Vue, Angular). |
-| 3 | **`mongodb`** | [`modelcontextprotocol/servers`](https://github.com/modelcontextprotocol/servers) (`mongodb-mcp-server`) | Direct MongoDB schema inspection, query profiling, index optimization, and aggregation pipeline testing for high-concurrency analytics. |
-| 4 | **`fetch`** | [`modelcontextprotocol/servers`](https://github.com/modelcontextprotocol/servers) (`@modelcontextprotocol/server-fetch`) | Validates RESTful endpoints, tests OpenWeatherMap API responses, and inspects HTTP 429 rate limit headers. |
-| 5 | **`github`** | [`modelcontextprotocol/servers`](https://github.com/modelcontextprotocol/servers) (`@modelcontextprotocol/server-github`) | Manages student feature branches, PR reviews, commit hygiene, and verifies contribution histories for the final defense. |
+| 2 | **`mongodb`** | [`modelcontextprotocol/servers`](https://github.com/modelcontextprotocol/servers) (`mongodb-mcp-server`) | Direct MongoDB schema inspection, query profiling, index optimization, and aggregation pipeline testing for high-concurrency analytics. |
+| 3 | **`fetch`** | [`modelcontextprotocol/servers`](https://github.com/modelcontextprotocol/servers) (`mcp-server-fetch`) | Validates RESTful endpoints, tests OpenWeatherMap API responses, and inspects HTTP 429 rate limit headers. |
+| 4 | **`github`** | [`modelcontextprotocol/servers`](https://github.com/modelcontextprotocol/servers) (`@modelcontextprotocol/server-github`) | Manages student feature branches, PR reviews, commit hygiene, and verifies contribution histories for the final defense. |
 
 ---
 
 ### 🧠 Official & Specialized Skills
 | # | Skill Name | Source Repository | Description & Workflow |
 | :- | :--- | :--- | :--- |
-| 6 | **`the-daily-web-spec`** | *Core Project* | Master course blueprint, administrative rules, MVC layer mapping, 4+ Mongoose schemas, and oral exam defense checklist. |
-| 7 | **`ponytail`** & **`ponytail-review`** | [`DietrichGebert/ponytail`](https://github.com/DietrichGebert/ponytail) | Forces minimal, simple code. Reaches for standard library and native platform features over external dependencies. |
-| 8 | **`find-docs`** & **`context7-cli`** | [`upstash/context7`](https://github.com/upstash/context7) | Fast real-time documentation lookup for Express, Mongoose, EJS, and Web APIs using Context7. |
-| 9 | **`security-and-hardening`** | [`addyosmani/agent-skills`](https://github.com/addyosmani/agent-skills) | Production security practices: OWASP mitigations, bcrypt hashing, session security, and anti-spam rate limiting. |
-| 10 | **`git-workflow-and-versioning`** | [`addyosmani/agent-skills`](https://github.com/addyosmani/agent-skills) | Disciplined team Git branching, atomic commits, PR reviews, and version control hygiene for 4-5 students. |
-| 11 | **`performance-optimization`** | [`addyosmani/agent-skills`](https://github.com/addyosmani/agent-skills) | Web performance, DOM batching, memory leak prevention, and high-concurrency time-series caching. |
-| 12 | **`vanilla-ajax-newsfeed`** | *Core Project* | Framework-free 20-article infinite scrolling (`IntersectionObserver`), live search, category/viewed filters, and instant AJAX comments. |
-| 13 | **`article-workflow-autosave`** | *Core Project* | Debounced autosave engine (`localStorage` + server sync), draft vs published dual-versioning, and side-by-side editorial diff viewer. |
-| 14 | **`impact-analytics-timeseries`** | *Core Project* | High-concurrency view logging, MongoDB bucketed time-series aggregation, and Chart.js timeline charts annotated with editor update milestones. |
-| 15 | **`seed-data-mock-generator`** | *Core Project* | Ready-to-run script generating 500+ realistic articles across all categories, multiple reporters/editors, comments, and analytics curves. |
+| 5 | **`the-daily-web-spec`** | *Core Project* | Master course blueprint, administrative rules, MVC layer mapping, 4+ Mongoose schemas, and oral exam defense checklist. |
+| 6 | **`ponytail`** & **`ponytail-review`** | [`DietrichGebert/ponytail`](https://github.com/DietrichGebert/ponytail) | Forces minimal, simple code. Reaches for standard library and native platform features over external dependencies. |
+| 7 | **`find-docs`** & **`context7-cli`** | [`upstash/context7`](https://github.com/upstash/context7) | Fast real-time documentation lookup for Express, Mongoose, EJS, and Web APIs using Context7. |
+| 8 | **`security-and-hardening`** | [`addyosmani/agent-skills`](https://github.com/addyosmani/agent-skills) | Production security practices: OWASP mitigations, bcrypt hashing, session security, and anti-spam rate limiting. |
+| 9 | **`git-workflow-and-versioning`** | [`addyosmani/agent-skills`](https://github.com/addyosmani/agent-skills) | Disciplined team Git branching, atomic commits, PR reviews, and version control hygiene for 4-5 students. |
+| 10 | **`performance-optimization`** | [`addyosmani/agent-skills`](https://github.com/addyosmani/agent-skills) | Web performance, DOM batching, memory leak prevention, and high-concurrency time-series caching. |
+| 11 | **`vanilla-ajax-newsfeed`** | *Core Project* | Framework-free 20-article infinite scrolling (`IntersectionObserver`), live search, category/viewed filters, and instant AJAX comments. |
+| 12 | **`article-workflow-autosave`** | *Core Project* | Debounced autosave engine (`localStorage` + server sync), draft vs published dual-versioning, and side-by-side editorial diff viewer. |
+| 13 | **`impact-analytics-timeseries`** | *Core Project* | High-concurrency view logging, MongoDB bucketed time-series aggregation, and Chart.js timeline charts annotated with editor update milestones. |
+| 14 | **`seed-data-mock-generator`** | *Core Project* | Ready-to-run script generating 500+ realistic articles across all categories, multiple reporters/editors, comments, and analytics curves. |
 
 ---
 
@@ -103,9 +102,9 @@ Add the servers from `claude_desktop_config.json` into your `claude_desktop_conf
 {
   "mcpServers": {
     "context7": { "command": "npx", "args": ["-y", "@upstash/context7-mcp@latest"] },
-    "ponytail": { "command": "npx", "args": ["-y", "ponytail-mcp@latest"] },
     "mongodb": { "command": "npx", "args": ["-y", "mongodb-mcp-server@latest"], "env": { "MONGODB_URI": "mongodb://127.0.0.1:27017/the_daily_web" } },
-    "fetch": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-fetch@latest"] }
+    "fetch": { "command": "uvx", "args": ["mcp-server-fetch"] },
+    "github": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-github@latest"] }
   }
 }
 ```

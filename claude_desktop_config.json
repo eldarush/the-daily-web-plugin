@@ -4,10 +4,6 @@
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp@latest"]
     },
-    "the-daily-web-ponytail": {
-      "command": "npx",
-      "args": ["-y", "ponytail-mcp@latest"]
-    },
     "the-daily-web-mongodb": {
       "command": "npx",
       "args": ["-y", "mongodb-mcp-server@latest"],
@@ -16,8 +12,8 @@
       }
     },
     "the-daily-web-fetch": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-fetch@latest"]
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
     },
     "the-daily-web-github": {
       "command": "npx",

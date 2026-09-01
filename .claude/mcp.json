@@ -4,10 +4,6 @@
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp@latest"]
     },
-    "ponytail": {
-      "command": "npx",
-      "args": ["-y", "ponytail-mcp@latest"]
-    },
     "mongodb": {
       "command": "npx",
       "args": ["-y", "mongodb-mcp-server@latest"],
@@ -16,8 +12,8 @@
       }
     },
     "fetch": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-fetch@latest"]
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
     },
     "github": {
       "command": "npx",
