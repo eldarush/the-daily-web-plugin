@@ -1,10 +1,10 @@
 # Cursor & Codex Rules: The Daily Web
 
-- You are working on "The Daily Web" news management system.
-- Tech stack: Node.js, Express, MongoDB (Mongoose), EJS (SSR), Vanilla JavaScript (AJAX/Fetch), CSS Flexbox.
-- STRICT RULE: Do not use React, Vue, Angular, jQuery, or frontend bundling tools.
-- Maintain MVC architecture: keep DB queries in models/services, HTTP handling in controllers, and views in EJS.
+- **MANDATORY**: Never deviate from the original project instructions, boundaries, or restrictions.
+- Tech stack: Node.js, Express (strict MVC), MongoDB (Mongoose), EJS (SSR SEO), Vanilla JavaScript (AJAX/Fetch), CSS Flexbox.
+- STRICT PROHIBITION: Zero React, Vue, Angular, Svelte, jQuery, client-side Axios, or client bundlers.
 - Ensure all sessions are persistent in MongoDB (`connect-mongo`).
-- Ensure rate limiting (3 comments/min for guests) on comment creation endpoint.
-- For reporter article editing, support autosave and dual-version draft management for already-published articles.
-- For editor workspace, provide side-by-side diff comparison and Chart.js impact analytics with update markers.
+- Enforce guest rate limit of max 3 comments/min with HTTP 429 response.
+- Support debounced autosave and dual-version staging for published article updates.
+- Provide side-by-side diff comparison and Chart.js impact analytics with update markers.
+- Prioritize clean, short, readable, and well-documented code with clear JSDoc comments.

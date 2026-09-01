@@ -1,8 +1,9 @@
 # Antigravity Rules for The Daily Web
 
-- Always follow the MVC structure with Express controllers, Mongoose models, and EJS views.
-- Never suggest or install client-side frontend frameworks (no React, Vue, Angular, jQuery). Use pure Vanilla JS and CSS Flexbox.
-- Ensure all guest comments pass through the 3 comments/min rate limiter.
-- Ensure all sessions are stored in MongoDB via `connect-mongo` so server restarts do not log users out.
-- Ensure published article edits do not overwrite the live version until editor approval.
-- Ensure 500+ mock records can be generated via `npm run seed`.
+- **ZERO DEVIATION MANDATE**: Never deviate from the original project requirements, tech limits, or architecture.
+- **Strict Tech Stack**: Node.js, Express (MVC), MongoDB/Mongoose, EJS (SSR for Article page SEO), Pure Vanilla JavaScript (Fetch/DOM), CSS Flexbox.
+- **Strictly Prohibited**: Never suggest or install client frameworks (no React, Vue, Angular, jQuery) or client bundlers.
+- **Security & Persistence**: Hash passwords with bcrypt; store persistent sessions in MongoDB with `connect-mongo`.
+- **Anti-Spam Rate Limit**: Limit guest comments to max 3 per minute.
+- **Autosave & Staging**: Continuous autosave for drafts; published edits stage in `pendingUpdate` until approved.
+- **Code Standards**: Write clean, short, readable, and thoroughly documented code with JSDoc comments.

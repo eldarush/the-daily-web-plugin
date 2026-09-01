@@ -1,23 +1,17 @@
 # Claude Code & Claude Desktop Project Guide: The Daily Web
 
-This guide configures Claude Code and Claude Desktop for pair programming on **The Daily Web** final project.
+## 🚨 MANDATORY INSTRUCTION: NEVER DEVIATE FROM PROJECT CONSTRAINTS
+You must uphold the original course requirements and restrictions at all times with ZERO deviations:
+1. **Allowed Tech**: Node.js, Express (MVC), MongoDB (Mongoose), EJS (SSR for Article SEO), Pure Vanilla JavaScript (Fetch API/DOM), HTML5, CSS Flexbox.
+2. **Prohibited Tech**: No React, Vue, Angular, jQuery, Axios on client, Bootstrap/Tailwind, or client-side build tools.
+3. **Session Persistence**: Sessions must survive server restarts using `connect-mongo`.
+4. **Rate Limiting**: Guests can post max 3 comments/min from the same device/IP.
+5. **Autosave & Dual-Version Flow**: Drafts autosave; edits to published articles do not overwrite live content until approved by editor.
+6. **Editor Diff & Impact Analytics**: Side-by-side diff view and Chart.js timeline with update milestone markers.
+7. **Weather API**: Cached server-side for max 15 minutes.
+8. **500+ Seed Articles**: Seedable via `npm run seed`.
 
-## Technology Guidelines
-- **Backend**: Node.js, Express, MongoDB (Mongoose), EJS (Server-side rendering for article page SEO).
-- **Frontend**: Strictly Vanilla JavaScript (Fetch API, DOM manipulation), HTML5 semantic tags, CSS3 Flexbox.
-- **Forbidden**: Do NOT use or suggest React, Vue, Angular, jQuery, or any client UI build system.
-- **Charts**: Use Chart.js via CDN or HTML5 Canvas for Impact Analytics.
-- **External API**: OpenWeatherMap (free tier) with server-side caching (<15 min ttl).
-
-## Common Development Commands
-- `npm start` - Run the Express server
-- `npm run dev` - Run with nodemon for live reload
-- `npm run seed` - Populate database with 500+ sample articles, comments, and analytics
-- `npm test` - Run automated route & model tests
-
-## Key Architectural Invariants
-1. **MVC Pattern**: Models in `/models`, Views in `/views`, Controllers in `/controllers`, Routes in `/routes`.
-2. **Session Persistence**: Sessions must be stored in MongoDB (`connect-mongo`).
-3. **Dual-Version Publishing**: When an existing published article is edited, the public version stays active while the new draft goes through editorial approval.
-4. **Rate Limiting**: Guests are restricted to 3 comments per minute per IP.
-5. **Autosave**: Reporter drafting must autosave continuously without losing work on refresh or browser close.
+## 💎 Code Quality Standards
+- **Clean, short, and readable**: Every line must be clear and explainable by the student team during defense.
+- **Well-documented**: Use concise JSDoc comments explaining parameters, return values, and rationale.
+- **Standard Library First**: Use native JavaScript and browser APIs before introducing extra code.
