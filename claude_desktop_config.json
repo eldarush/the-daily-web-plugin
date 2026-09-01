@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "the-daily-web-context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
+    },
+    "the-daily-web-ponytail": {
+      "command": "npx",
+      "args": ["-y", "ponytail-mcp@latest"]
+    },
+    "the-daily-web-mongodb": {
+      "command": "npx",
+      "args": ["-y", "mongodb-mcp-server@latest"],
+      "env": {
+        "MONGODB_URI": "mongodb://127.0.0.1:27017/the_daily_web"
+      }
+    },
+    "the-daily-web-fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch@latest"]
+    },
+    "the-daily-web-github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github@latest"]
+    }
+  }
+}

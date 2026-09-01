@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment & Secrets (Mandatory course requirement)
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# Logs & Temp
+logs/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db

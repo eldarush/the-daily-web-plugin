@@ -1,0 +1,11 @@
+---
+description: MVC Architecture & Server-Side Rendering Standards for The Daily Web
+globs: ["**/*.js", "**/*.ejs"]
+---
+
+# MVC & SSR Rules
+
+1. **Controllers**: Place in `controllers/`. Each controller handles req/res and calls Mongoose models. Never put raw MongoDB queries inside route files.
+2. **Models**: Place in `models/`. Use Mongoose schemas with proper type validations, indexes (e.g. text search on `title`), and timestamps.
+3. **Views**: Place in `views/`. Use EJS for server-side rendering of article pages to meet SEO requirements. Use partials for headers, footers, and sidebars.
+4. **Public Assets**: Place in `public/`. Keep CSS flexbox styles in `public/css` and vanilla JS scripts in `public/js`.

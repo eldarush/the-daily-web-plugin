@@ -1,0 +1,12 @@
+---
+description: Security, Rate Limiting & Session Persistence Rules
+globs: ["middlewares/**/*.js", "controllers/**/*.js", "models/**/*.js"]
+---
+
+# Security & Rate Limiting Rules
+
+1. **Password Hashing**: Always hash passwords using `bcrypt` (with salt rounds >= 10) before saving to MongoDB.
+2. **Session Persistence**: Configure `express-session` with `connect-mongo` storing sessions in MongoDB. Never rely solely on in-memory memoryStore.
+3. **Anti-Spam Rate Limiter**: Enforce a strict maximum of 3 comments per minute for guest users per IP/fingerprint. Return HTTP 429 when violated.
+4. **Server-side Authorization**: Validate user role (`Reporter`, `Editor`) on every non-public endpoint in Express middleware (`req.session.user.role`).
+5. **Weather API Caching**: Cache OpenWeatherMap API responses in memory or Redis/MongoDB for 15 minutes before refreshing.

@@ -1,0 +1,41 @@
+{
+  "name": "the-daily-web-plugin",
+  "displayName": "The Daily Web - Universal AI Team Assistant & Plugin",
+  "version": "1.0.0",
+  "description": "Comprehensive AI pair-programming plugin and collaborative toolkit for 'The Daily Web' final project. Bundles official MCP servers and downloaded top-rated skills from Ponytail, Context7, and Addy Osmani's Agent Skills, tailored for Node.js, Express, MongoDB, EJS, and Vanilla JavaScript.",
+  "author": "eldarush",
+  "license": "MIT",
+  "homepage": "https://github.com/eldarush/the-daily-web-plugin",
+  "keywords": [
+    "antigravity",
+    "claude",
+    "codex",
+    "cursor",
+    "mcp",
+    "skills",
+    "ponytail",
+    "context7",
+    "express",
+    "mongodb",
+    "vanilla-js",
+    "the-daily-web"
+  ],
+  "mcpConfig": "./mcp_config.json",
+  "hooks": "./hooks.json",
+  "rules": "./rules/AGENTS.md",
+  "skills": [
+    "the-daily-web-spec",
+    "ponytail",
+    "ponytail-review",
+    "find-docs",
+    "context7-cli",
+    "security-and-hardening",
+    "git-workflow-and-versioning",
+    "performance-optimization",
+    "spec-driven-development",
+    "vanilla-ajax-newsfeed",
+    "article-workflow-autosave",
+    "impact-analytics-timeseries",
+    "seed-data-mock-generator"
+  ]
+}

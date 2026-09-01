@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "pre_tool_call": [
+      {
+        "matcher": "write_to_file|replace_file_content",
+        "description": "Ensure no forbidden frontend frameworks (React, Vue, Angular, jQuery) are introduced.",
+        "action": "log_warning_if_framework_detected"
+      }
+    ],
+    "post_agent_turn": [
+      {
+        "description": "Ensure session persistence, rate limiting, and MVC structure remain compliant with course specs."
+      }
+    ]
+  }
+}

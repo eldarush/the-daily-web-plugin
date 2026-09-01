@@ -1,0 +1,12 @@
+---
+description: Vanilla JavaScript & AJAX Standards (Zero Frameworks)
+globs: ["public/js/**/*.js"]
+---
+
+# Vanilla JS & AJAX Rules
+
+1. **No External Frontend Frameworks**: Never import or bundle React, Vue, Angular, jQuery, or Axios in client scripts.
+2. **Infinite Scroll**: Implement with `IntersectionObserver` monitoring a sentinel element at the bottom of the feed, loading 20 articles per fetch.
+3. **Dynamic Filtering & Sorting**: Use `fetch('/api/articles?category=...&sort=...')` and update the DOM using `DocumentFragment` or `innerHTML` templating without page reload.
+4. **Instant Comment Posting**: Submit comments via `fetch('/api/articles/:id/comments', { method: 'POST', body: ... })` and prepend the new comment element immediately to the comments DOM container.
+5. **Autosave**: Debounce input events (2 seconds) and sync draft changes with `PATCH /api/articles/:id/autosave` and `localStorage`.
